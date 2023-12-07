@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.13.2/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        div.testata {
+            background-image: url(louis-hansel-dsT5LGzEuzE-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 500px 0px 300px black inset;
+            padding: 250px 0px;
+        }
+        div.testata p {
+            color: wheat;
+            padding: 0px 30px;
+        }
+        div.testata img {
+            width: 800px;
+        }
+        p.h2 {
+            font-size: 60px;
+            margin-left: 45px;
+        }
+        p.h3 {
+            font-size: 40px;
+            margin-left: 50px;
+        }
+        div.menu {
+            background-image: url(joe-woods-4Zaq5xY5M_c-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+        div.menu p {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 100px;
+            font-weight: bold;
+            color: black;
+        }
+        div.menu button {
+            color: black;
+            border-radius: 15px;
+            margin: 20px;
+            border: 5px solid slategrey;
+            box-shadow: 10px 10px 20px black;
+        }
+        div.menu img {
+            border-radius: 10px 10px 0px 0px;
+            width: 700px;
+        }
+        div.foto {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: space-around;
+            align-items: center;
+            background-color: #838383;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        div.foto img {
+            width: 1100px;
+            border-radius: 15px;
+        }
+        div.bio {
+            background-image: url(hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        div.bio h2 {
+            font-size: 70px;
+            font-weight: bold;
+            text-align: right;
+            padding-top: 200px;
+            margin: 0px 50px 20px 0px;
+        }
+        div.bio p {
+            text-align: right; 
+            font-size: 30px;
+            padding-bottom: 200px;
+            margin-right: 50px;
+        }
+        div.clik {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: space-around;
+            opacity: 0.9;
+            align-items: baseline;
+            font-size: 30px;
+        }
+        div.clik p {
+            margin-top: -20px;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        div.food {
+            padding-top: 50px;
+        }
+        div.food img {
+            width: 100px;
+        }
+        div.food p {
+            font-size: 150px;
+            font-weight: bold;
+        }
+        div.selection {
+    border-left: 2px solid #b8b5b5;
+    margin-top: 10px;
+}
+
+div.selection button {
+    border: 0px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+        /*div.selection {
+            border-left: 2px solid #b8b5b5;
+            margin-top: 10px;
+            position: sticky;
+        }
+        div.selection {
+            margin-left: 50px;
+        }
+        div.selection button {
+            border: 0px;
+            padding-left: 10px;
+            background-color: white;
+        }*/
+        div.selection button:hover {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        div.selection a {
+            height: 100vh;
+            color: black;
+            text-decoration: none;
+            font-size: 45px;
+    position: sticky;
+    top: 0; /* Aggiungi questa linea per impostare la posizione "sticky" */
+    margin-left: 50px; /* Sposta margin-left nello stesso blocco */
+        }
+        div.menuli {
+            float: right;
+            margin-top: -300px;
+        }
+        div.menuli img {
+            float: right;
+            margin-right: 35px;
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            margin-top: -100px;
+        }
+        div.menuli p {
+            font-size: 50px;
+            font-weight: normal;
+        }
+        div.menuli p.t {
+            font-weight: bolder;
+            font-size: 65px;
+        }
+        div.menuli div.big div {
+            margin: 20px 0px;
+            border: 1px solid #b8b5b5;
+            border-radius: 50px;
+            padding: 10px 50px;
+        }
+        div.drink {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="testata">
+        <img src="riologoyellow-1024x614.png" alt="">
+        <p class="h2">Food | Drink | Enoteca</p>
+        <p class="h3">Resturant</p>
+    </div>
+    <div class="menu">
+        <p>Il nostro menù</p>
+        <div class="clik">
+            <button class="1"><img src="sam-moghadam-khamseh-i3A-se17VAg-unsplash.jpg" alt="piatto"><p style="color: black;">FOOD</p>Scopri le nostre portate</button>
+            <button class="2"><img src="kobby-mendez-xBFTjrMIC0c-unsplash.jpg" alt="piatto"><p style="color: black;">DRINK LIST</p>Scegli quale drink bere!</button>
+            <button class="3"><img src="hermes-rivera-aK6WGqxyHFw-unsplash.jpg" alt="piatto"><p style="color: black;">ENOTECA</p>I nosti vini</button>
+        </div>
+    </div>
+    <div class="foto">
+        <img src="ivan-stern-LOLSb7m6XkU-unsplash.jpg" alt="">
+        <img src="dan-farrell-hHotHaiL3uE-unsplash.jpg" alt="">
+        <img src="zachariah-hagy-MCKrW7fB7Pw-unsplash.jpg" alt="">
+        <img src="rohan-g--mwNJswDlXE-unsplash.jpg" alt="">
+    </div>
+    <div class="bio">
+        <h2>Ristorante da RIO, noi siamo<br>il nostro punto forte</h2>
+        <p>Benvenuti al Ristorante RIO, dove la nostra passione<br>per la cucina si unisce a ingredienti freschi per creare<br>esperienze gustative uniche. Il nostro ambiente accogliente<br>e raffinato offre l'atmosfera perfetta per cene<br>indimenticabili. Con un menu che celebra le tradizioni italiane<br>e un servizio attento, ci impegniamo a soddisfare ogni palato.</p>
+    </div>
+    <div class="food">
+        <center>
+            <img src="riologoyellow-1024x614.png" alt="">
+            <p style="margin-top: -20px;">FOOD</p>
+        </center>
+        <div class="selection">
+            <a href="#taglieri">TAGLIERI</a><br><br>
+            <a href="#entree">ENTREE</a><br><br>
+            <a href="#spiedoni">SPIEDONI ALLA BRACE</a><br><br>
+            <a href="#carni">CARNI ALLA BRACE</a>
+        </div>
+        <div class="menuli">
+            <div id="taglieri" class="big">
+                <p class="t">TAGLIERI</p>
+                <div class="ta">
+                    <p>TAGLIERE RIO</p>
+                    <img src="elena-leya-H-D-0UOgzMc-unsplash.jpg" alt="">
+                    <p class="d">Salumi, formaggi, bruschette, verdure e sfiziosità dello chef</p>
+                    <P class="p">€18</P>
+                </div>
+            </div>
+            <div id="entree" class="big">
+                <P class="t">ENTREE</P>
+                <div class="arr">
+                    <p>ARROSTICINI DI PECORA</p>
+                    <p class="p">€8</p>
+                </div>
+                <div class="nugg">
+                    <p>NUGGET CHEESE BACON</p>
+                    <p class="d">Cheese bacon, guacamole e salsa Ceaser</p>
+                    <p class="p">€6</p>
+                </div>
+                <div class="don">
+                    <p>CHICKEN DONUTS</p>
+                    <p class="d">Con salasa chipotle</p>
+                    <p class="p">€8</p>
+                </div>
+                <div class="tac">
+                    <p>TACOS</p>
+                    <p class="d">Con bufalina stracotta, pomodoro, insalata, salsa burger</p>
+                    <p class="p">€9</p>
+                </div>
+                <div class="ang">
+                    <p>ANGUS CRUNCH</p>
+                    <p class="d">In crosta di pizzaiola guacamole e salsa cheddar</p>
+                    <p class="p">€10</p>
+                </div>
+                <div class="tar">
+                    <p>TARTARE DI FASSONA</p>
+                    <p class="d">Con tartufo estivo, riso croccante, zabaione salato</p>
+                    <p class="p">€12</p>
+                </div>
+            </div>
+            <div id="spiedoni" class="big">
+                <p class="t">SPIEDONI ALLA BRACE</p>
+                <div class="pol">
+                    <p>POLLO RUSPANTE</p>
+                    <p class="d">Con crema di zucchine croccanti</p>
+                    <p class="p">€13</p>
+                </div>
+                <div class="cas">
+                    <p>CASERTANO</p>
+                    <p class="d">Maiale nero lepino, crema di patate e tartufo estivo</p>
+                    <p class="p">€18</p>
+                </div>
+                <div class="cub">
+                    <p>CUBEROLL DI MARCHIGIANA</p>
+                    <p class="d">Servito con verdure saltate nel wok</p>
+                    <p class="p">€22</p>
+                </div>
+            </div>
+            <div id="carni" class="big">
+                <p class="t">CARNI ALLA BRACE</p>
+                <div class="bur">
+                    <p>BURGER DI MARCHIGIANA</p>
+                    <p class="d">Con crema di patate, guacamole e pomodoro arrostito</p>
+                    <p class="p">€13</p>
+                </div>
+                <div class="dia">
+                    <p>DIAFRAMMA DI FRISONA</p>
+                    <p class="p">€14</p>
+                </div>
+                <div class="con">
+                    <p>CONTROFILETTO DI ANGUS</p>
+                    <p class="p">€18</p>
+                </div>
+                <div class="mat">
+                    <p>FILETTO DI MARCHIGIANA</p>
+                    <p class="d">*possibilità di aggiungere alla tua carne Lardo di Nero Lepino e Tartufo estivo fresco</p>
+                    <p class="p">€22</p>
+                </div><!--<center>
+                    <img src="riologoyellow-1024x614.png" alt="">
+                    <p style="margin-top: -20px;">DRINK LIST</p>
+                </center>
+                <div class="selection">
+                    <button><a href="#spritz">SPRITZ SELECTION</a></button><br><br>
+                    <button><a href="#">JUNGLE DRINKLIST</a></button><br><br>
+                    <button><a href="#">LIQUORISTICA</a></button><br><br>
+                    <button><a href="#">ACQUAVITE</a></button><br><br>
+                    <button><a href="#">VODKA</a></button><br><br>
+                    <button><a href="#">RHUM</a></button>
+                </div>
+                <div class="drink">
+                    <div class="passion">
+                        <p>PASSION SPRITZ</p>
+                        <p class="d">Passoa, Prosecco dry, Soda</p>
+                        <p class="p">€6</p>
+                    </div>
+                    <div class="mango">
+                        <p>MANGO SPRITZ</p>
+                        <p class="d">Liquor mango, Prosecco dry, Soda</p>
+                        <p class="p">€6</p>
+                    </div>
+                    <div class="iovem">
+                        <p>IOVEM SPRITZ</p>
+                        <p class="d">Iovem, Prosecco dry, Soda</p>
+                        <p class="p">€7</p>
+                    </div>
+                    <div class="orange">
+                        <p>ORANGE SPRITZ</p>
+                        <p class="d">Arancello, Prosecco dry, Soda</p>
+                        <p class="p">€6</p>
+                    </div>
+                    <div class="limone">
+                        <p>LIMONCELLO SPRITZ</p>
+                        <p class="d">Limoncello, Prosecco dry, Soda</p>
+                        <p class="p">€6</p>
+                    </div>
+                </div>
+                <div class="jungle">
+                    <div class="coco">
+                        <p>COCO LOCO</p>
+                        <p class="d">Rhum havana club 3 anos, Batida de cocco, Mango, Milk coconut, Oleo saccarum lime, Vanilla syrup, syrup coconut</p>
+                        <p class="p">€7</p>
+                    </div>
+                    <div class="italian">
+                        <p>ITALIAN MULE</p>
+                        <p class="d">Italicus (liquor bergamotto), Fresh lime juice, Ginger beer</p>
+                        <p class="p">€7</p>
+                    </div>
+                    <div class="passion">
+                        <p>PASSION FIZZ</p>
+                        <p class="d">Gin beefeater, Lemon fresco, Simple syrup, Passion fruit, Egg white</p>
+                        <p class="p">€7</p>
+                    </div>
+                    <div class="caip">
+                        <p>CAIPIRIO'</p>
+                        <p class="d">Cachaca capucana, Sugar, Lime, Mango puree</p>
+                        <p class="p">€7</p>
+                    </div>
+                    <div class="ita">
+                        <p>ITALIANO VERO</p>
+                        <p class="d">Campari, Limoncello, Montenegro</p>
+                        <p class="p">€7</p>
+                    </div>
+                    <div class="rio'">
+                        <p>RIO'</p>
+                        <p class="d">Gin beefeater, Fresh lemon juice, Symple syrup, Egg white, Angostura bitter, Basil</p>
+                        <p class="p">€8</p>
+                    </div>
+                    <div class="mimmo">
+                        <p>EL MIMMO</p>
+                        <p class="d">Tequila mezcal, Agave, Fresh lime juice, Sugar syrup, Egg white</p>
+                        <p class="p">€8</p>
+                    </div>
+                    <div class="lady">
+                        <p>PINK LADY</p>
+                        <p class="d">Gin monkey 47, Lemon juice, Applejack, Egg white, Dash granadine</p>
+                        <p class="p">€14</p>
+                    </div>
+                    <div class="monkey">
+                        <p>MONKEY MAI TAI</p>
+                        <p class="d">Gin monkey 47, Velvet falernum, Dry curaçao, Overproff rum, Lime juice, Mint spring</p>
+                        <p class="p">€14</p>
+                    </div>
+                </div> -->
+                
+        </div>      
+    </div>
+</body>
+</html>
+<!--
+            <div class="">
+                <p></p>
+                <p class="d"></p>
+                <p class="d"></p>
+            </div>
+-->
